@@ -1,0 +1,265 @@
+body {
+                  background-color: white; /* Ensure the iframe has a white background */
+                }
+    
+                * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* Header y Navegación */
+header {
+  background: #2c3e50;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #3498db;
+}
+
+/* Sección Hero */
+.hero {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #3498db, #2c3e50);
+  color: white;
+  text-align: center;
+}
+
+.perfil-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.perfil-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  margin-bottom: 1.5rem;
+}
+
+.descripcion h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.descripcion p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Secciones generales */
+.seccion {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.seccion h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  position: relative;
+}
+
+.seccion h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #3498db;
+  margin: 0.5rem auto;
+  border-radius: 2px;
+}
+
+/* Habilidades */
+/*.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.skill-item:hover {
+  transform: translateY(-10px);
+}
+
+.skill-item i {
+  font-size: 2.5rem;
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+
+.skill-item h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}*/
+
+/* Habilidades */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.skill-card i {
+  font-size: 2.5rem;
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-card p {
+  color: #7f8c8d;
+  font-size: 1rem;
+}
+
+/* Herramientas y Hobbies */
+.herramientas-list, .hobbies-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.herramientas-list li, .hobbies-list li {
+  background: #e3f2fd;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 500;
+  color: #2c3e50;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.proyectos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.proyecto-link {
+  background: #3498db;
+  color: white;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.proyecto-link:hover {
+  background: #2980b9;
+}
+
+/* Contacto */
+.contacto a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contacto a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* Botón de Volver Arriba */
+.volver-arriba-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.volver-arriba-btn.mostrar {
+  opacity: 1;
+  visibility: visible;
+}
+
+.volver-arriba-btn:hover {
+  background: #2980b9;
+}
