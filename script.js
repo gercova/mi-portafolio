@@ -61,3 +61,8 @@ document.querySelectorAll('nav ul li a').forEach(link => {
     nav.classList.remove('active');
   });
 });
+
+/**
+ * google-site-verification=ahWMAdxTPWMNLbKdg3iUsgzJ7brSTml_NQ79tY3SMxQ
+ * google-site-verification=ahWMAdxTPWMNLbKdg3iUsgzJ7brSTml_NQ79tY3SMxQ
+ */
