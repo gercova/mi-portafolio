@@ -46,3 +46,18 @@ document.head.insertAdjacentHTML('beforeend', `
     }
   </style>
 `);
+
+// Menú hamburguesa
+const menuBtn = document.getElementById('menu-btn');
+const nav = document.getElementById('nav');
+
+menuBtn.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
+
+// Cerrar menú al hacer clic en un enlace
+document.querySelectorAll('nav ul li a').forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('active');
+  });
+});
